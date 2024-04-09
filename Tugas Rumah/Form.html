@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Registrasi</title>
+  <link rel="stylesheet" href="style.css" /> <!-- Menghubungkan file CSS untuk styling -->
+</head>
+<body>
+  <div class="container">
+    <h2>FORM REGISTRASI</h2> <!-- Judul form -->
+    <form id="registrationForm"> <!-- Form dengan ID registrationForm untuk nantinya diakses dengan JavaScript -->
+
+      <!-- Input untuk Nama -->
+      <div class="form-group">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" />
+        <div class="error-message" id="nameError"></div> <!-- Pesan error untuk Nama -->
+      </div>
+
+      <!-- Input untuk Username -->
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" />
+        <div class="error-message" id="usernameError"></div> <!-- Pesan error untuk Username -->
+      </div>
+
+      <!-- Input untuk Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" />
+        <div class="error-message" id="emailError"></div> <!-- Pesan error untuk Email -->
+      </div>
+
+      <!-- Input untuk Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" />
+        <div class="error-message" id="passwordError"></div> <!-- Pesan error untuk Password -->
+      </div>
+
+      <!-- Input untuk No Telepon -->
+      <div class="form-group">
+        <label for="phone">No Telepon</label>
+        <input type="tel" id="phone" name="phone" />
+        <div class="error-message" id="phoneError"></div> <!-- Pesan error untuk No Telepon -->
+      </div>    
+
+      <!-- Input untuk Jenis Kelamin -->
+      <div class="form-group">
+        <label for="gender">Jenis Kelamin</label>
+        <select id="gender" name="gender">
+          <option value="male">Laki-laki</option>
+          <option value="female">Perempuan</option>
+        </select>
+      </div>
+
+      <!-- Input untuk Alamat Website -->
+      <div class="form-group">
+        <label for="website">Alamat Website</label>
+        <input type="text" id="website" name="website" />
+        <div id="websiteError" class="error-message"></div> <!-- Pesan error untuk Alamat Website -->
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button> <!-- Tombol Submit -->
+    </form>
+  </div>
+
+  <script src="script.js"></script> <!-- Menghubungkan file JavaScript untuk validasi form -->
+</body>
+</html>

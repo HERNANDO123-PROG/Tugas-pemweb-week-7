@@ -1,0 +1,91 @@
+body {
+    font-family: 'Roboto';
+    background-color: rgba(236, 0, 0, 0.5); 
+    color: #333; 
+    background-image: url('Assets/6057485.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8); /* Warna putih dengan transparansi 80% */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    text-align: center;
+    color: #333; /* Warna teks abu-abu tua */
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666; /* Warna teks abu-abu */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333; /* Warna teks abu-abu tua */
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+}
+
+.submit-btn {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block; /* Mengubah tombol submit menjadi blok agar dapat diberi lebar maksimum */
+    margin: 0 auto; /* Memberikan margin atas dan bawah 0 serta margin kiri dan kanan otomatis, sehingga tombol akan berada di tengah */
+    width: 200px; 
+    height: 50px;
+    font-size: 15px;
+}
+
+
+.error {
+    border-color: red;
+}
+
+/* Media untuk tablet */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 80%;
+    }
+}
+
+/* Media untuk ponsel */
+@media screen and (max-width: 480px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"],
+    select {
+        font-size: 14px;
+    }
+}
